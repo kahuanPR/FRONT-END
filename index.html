@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head> 
-       <title> Minha primeira página </title>
-       <neta charset="UTF-8">
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Minha primeira página websemántica</title>
 </head>
+<body>
+     <header> <!--Essa tag indica que é o cabeçalho da página-->
+          <nav> <!--Indica que vou colocar um menu-->
+               <ul>
+                    <li>Home</li>
+                    <li>Sobre</li>
+                    <li><a href="https://www.w3schools.com/" target="_blank"> W3schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank"> Mdm web docs</a></li>
+                    <li><a href="file:///C:/Users/Aluno/repositorio/FRONT-END/tabelas.html"target="_blank"> Tabela</a></li>
+               </ul>
+               
+          </nav>
+          <hr>
 
 
-<body> 
-     <h1> Eu sou um título </h1>
-     <p> Paragráfo da pagina </p>
+     </header>
 
+     <section>
+          <!--Indica que é uma seção da minha página-->
+          <article>
+               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABAlBMVEUCNHH///8AMXADNHM4WIsAJ22QoLf///0ALW4AJGoAKGr//v8AMG8ANG////oAKm0AH2hodpaepcEAHmkQRH/k6uy+zNNGYpOpt8cAE2PW3ugAL2wAPHnJ0eAAMnQALXEAGGXx8/kAAFpSbI8AJW8AG2KfqrpmgKEAN24nSXuZqLyhpreKl6/L2OBfeJxviauqtc44VX4AIGF3jqqxvsvU3e/V4uQAJHIALHdCXoGMnblNZYvw9vCDmrgyUn8QPnZ8iqtVcpxVcI4IPnHg4uoAEGp+iqMAAGOGjqq9ytcZToMAAFayuslWdpyetcQYTn2KnqwoT27c5uJVaJRogJgENmUutiIbAAALAUlEQVR4nO2Ye3vaOhKHLRvjCwjcEKeAwZfEhMvB5AIHKPe0JC1Nk3N2k/3+X2WlkQy5Nulzdp99dFa/P1rsyNK80sxoJEX5W0tTM/9rE/7LkoTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4koTiSxKKL0koviSh+JKE4ksSii9JKL4kofiShOJLEoovSSi+JKH4+r8kbGHN93TT17Cqszc+9rHiv9FRENu2rQe7Zr6m+EEcVkrkn9AJfIzh9Vh/rDg2yVvs80fbYs0UrNv0+eEYeszaBFo6RPpZEToPbJ3Y4Gn4DUKsFWvNTveT7X+amFqLvYvN1s8JvaPjvb2946a369q39elx4s6IkvLU8aEHf5p9ok4TECfsaZJdqAwHXsyVlEZRa7xJp61uB7HZq3meNmh3fiM2dHcmvEKoFXsGIiofJqhfDOjo5uL4xHva7rGCXpnqZDfpath3kWGgnEGEULUNXcVl9FQd8o2/2D7Obfh6CUa49pbQ6SCDtTgx+Uts7rM3VYv6zn75lJiQDd5aQ6U4Q9nDJkL6WXasnpca56Z+hJJDLbAaDafVGjnFUaloOo6ONa/UaFgtGM+0qMwd8rJKxyZwBrNstiRTr5aGzwhvyEf6ij8UjIMS7c88gsfy1mm9NsrxNsejdBHNq3SSwEHABPvJgj0nVPEMJVP7y8KebD6Pbt1oc3aRoOhgf1l2ozIObjefD5KrTL2eteJmEq07XvB8SXHwJUIFajGBLAAqsZZ2Hj0jpE4XD/iDYUQVEvXESQGoX0wJrWT7Qb2UjmJxj2g+Xrc3CDU7S92jXKtU0VUHHfdQ1BsWoqRWRf2VkYQucn/QvxfQzQIVptSVXyB0hgiWzs32JzMDTF+HhPDsGWDUIO3DoZESou/UXOcACL+ns1e8333hbrFTj1Bfz4Mv7haX338bkqFKdXR1jNz5DXbuiJdOkbtauai9RtPrKjo53KA9K3PS3cDaKH6xQaXzocZ9Zu7mq1UskYmgiipkab7R9zl0U9vnateIk6p+jr2nnF295SshjWEDXaYzpkYUPimAP7Q5t69QjzAKbgUezXNqgv1mLlWW3fnYOTLQhzr6VpmTaErMC5RUyFrW65vNvoumlQQ1KwM0+Yxm5TojLParVFmL9eGsYd0iTDzQbzHPpGtoDeA9auVVLl8lBplTWLEEHHpjYU3zYDkT7o9+qQzh/H0GhEc83M0zNo8HDn3KZ6q/ExM2b2eaJXH/wwsDLcgadjZty0WLC1S9XqDo+mvnh0IJq+ieEM4H6OpwwAjVxQeqaV5hg+UoScE9pPO/PCDaHNCcGboQnOvGNkW26CTYc4MSXgGAa/uKeUMBUYdNGA6IG5Dn20tweJTl2aQ4Z749YRm81qMmHHnaQ5qXCO0uy0+HJA5XaJYY1YAm5T9OkbsmOC76RAkvNyh7gnLDGSpD/6pJleeT+xnWpIDuQyvwVccqhST30vFYXh04GKRqzBpnA+2Xdfjrwm+NOvB5k4e4A/GWa1Vc9jlf2tKgAB5xka4p6DHNS4SatTiZrNoj72aVsc7mexd6a3Q06dbs6eTP6ah1sVqavX7GO1qdWUfZXrv58flWSdya5Q20LpMwjvMK8xy+B6CrsAgyTTbhxHIag4cdcMK+jsME3K/NZkyHqEZZK6yCk1cbbJjQZT6/VJ9Z8DNCMqRatD0yvWbRVAJSwJFIGluxiklVFGCfTlKge9jzyH5IqrtinvdExftQ2U5MPIuYHCXZ/XDM3GMCa2C4Ww1hOcaoQAqDYYVNwCDUApd+PuMkSkQ/izyVrDW8xzCQumSj0ACnwupDG36yhq+JuhXJci2saC/9tUa0xDyXhoN0H2Qa9hzcainhQVqXpDqghEGP+qBxWwKTC1HDb+/+qGIS8kYhh/q2FpcNSLkfYVbNHutj4DAL/JpGbVDezDSvyPd1qK01y3xhe9Xns4jolucAVTlA2xqEWo8m5wS+EhmPCHMoS6PT6sBTs2gNmXPqTe6WtK8gQ5yBZK1QU/QO+4rFp55lQ/RZosl/BBOS4NEq/gphu/vt27duLxh8fqGIebKG2HdWuyKEWog+eb7iP11C1KOJoQRRhzI4PoUfvZDVKlM6kOZUCTSl0jQekIVTQOdVAVoEfMy/uIY8S9RvUGK1yGlFI8cjsnFhjTntwziEPGmG5v3AhW2N2mHcxhiWhmzkSZLUQUm9RotVj0XduWY2AWZwCBkFfaGd2XMI3eS6QjRl5RHdJ7FyyQrD2XaS/2IcEkL37Czzj7DZVoNGMLYxPo91O7afRSVWfUjbvunEZ90qrCAyyjGOj2GJ0MgpcZ3T+VbZwaLe0NQazMD6EFLL2qJZbwlbq+FWh8Ph7yyXGrQ8IpHACsNh6dWi9NcJLysV5/6fp2G77roDpV0dTly3y3blB/uhup9ZLBZ/LL6oZK/WSXlXYITMGwuI2Jcef1jPLOqOLUWjy0IyVAZM/1Hyac4yGBV0AlUbmTGSmn3+GTlqpGfX9+6HrxPmhsm630fJ15kxbaLEM9DmhFR3NAwe1jQWPyjQQwPGpF4Bl1vpqhJBFG0cDHCUj6KOWNTRWoxsB7Qx66CrY5yfMjwmZPDsdTdW8OiY/W6mFwvvrmleJzQ2m3pzhep35MgwyaGagUaXZTR4Wpc6G7YR0/0aa9cJSy/tMfNGA82dPBdb8waLOjohdh8as42GZhB7DYTbjMV/ZWNFC3kqq6kM6f116euE7nkptK5Q/Qq5g0H5dJ9UIXGH1VAPzxYWJyx/JQfSShZBIG2cVnDCCPsfd/LgQArlaFHdluBspwl9NYYKshAdcG1cRkW2QN+fwU/jUuFe+u6zxSsKLlCkEpK+Uf+O1tdOPSGRfvR1SJzpSUurw2faPc0OImaGUcP+KD3m7pSQzdq8g58bmjA0e7Zdr6SEPVa1oKtLB1Sq7PGeHTVgHsEPFq/qVwjJGpLJ8rro98OyEc0KkxZJdwhVn+XSfHrMhRsMcLgcCTKNVZWP1Impg4NnZnU694162sYon/ukBoLl1fkW4HtsQ0RRS+V7I6sZ/iOEuHYx9clGuH935lkfr1aLEimtzOYHMw9O8uCeButZNniuwA+10TT2NVWZPSO8IKHmDKDNFOJnu/45dGKmPtvcErbu+IdnqsM9ordLnu+8p3ldfC+g/+WLZp4WviOb9//4ri3sz2i6YLdsJC1VaKv0YPFQS42eEODnCL70do0WpsoiLUlP+oqPuduiVVBymZd+2W7x775re7dqk862fntyX6qP7wfVaDabuZvjqcmMz398elWahbtNe0KvSbts7v1WenE6yXuZDvw6y2/NVewOuzPtBfkstJxsnfTd96Xvlx/v7qCe3HljrJPEFo9LlRI5Av+Lz4L+TPDe0sm3vCusbv+Gff7Bg2smLb0bJ8WiSa/A7XiXBt575/03kyQUX5JQfElC8SUJxZckFF+SUHxJQvElCcWXJBRfklB8SULxJQnFlyQUX5JQfElC8SUJxZckFF+SUHxJQvElCcWXJBRfklB8SULxJQnFlyQUX5JQfElC8SUJxZckFF+SUHxJQvElCcWXJBRfklB8SULxJQnFlyQUX5JQfElC8SUJxZckFF+SUHxJQvElCcWXJBRfklB8SULxJQnFlyQUX4Tw30c/D3HU7ziyAAAAAElFTkSuQmCC">
+
+          </article>
+
+     </section>
+
+     <footer><!--indica que é o rodapé da página -->
+          <p> 2024 minha página semântica. Todos os direitos reservados!</p>
+
+     </footer>
 </body>
 
 </html>
