@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto piscando</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(to left, red,black, black, red );
+        }
+        p{
+            color: white;
+            font-size:  130px; ;
+            animation: texto 10s infinite;
+        }
+        @keyframes texto{
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="textopiscando">
+        <p>Professor, não aguento você.</p>
+    </div>
+</body>
+</html>

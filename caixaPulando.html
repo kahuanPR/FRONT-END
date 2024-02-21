@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Pulando</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(255, 174, 0);
+        }
+        .caixa {
+            width: 30vh;
+            height: 30vh;
+            background-color:rgb(0, 0, 0);
+            position: relative;
+            animation: saltar 2s linear infinite;
+            
+        }
+        
+        @keyframes saltar {
+            0%, 100%{left: 0;}
+            50% {left: -90px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa"></div>
+</body>
+</html>
